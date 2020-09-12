@@ -33,4 +33,5 @@ fairseq-train "data-bin/${LANGUAGE}" \
     --max-sentences 2048 \
     --max-epoch 50 \
     --no-epoch-checkpoints \
+    --optimizer adam
     "$@"  # In case we want to configure more from caller script.
